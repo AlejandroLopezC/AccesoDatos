@@ -1,0 +1,305 @@
+-------------------------------------------------------------------------------
+Test set: ad.a4.OriginalTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 5, Errors: 2, Skipped: 0, Time elapsed: 0.557 s <<< FAILURE! -- in ad.a4.OriginalTest
+ad.a4.OriginalTest.csvConComas -- Time elapsed: 0.163 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: campos en: P101,2026-09-10,Talleres "O Rápido", S.L.,Kit de embrague, reforzado,1,189.0 ==> expected: <6> but was: <8>
+	at ad.a4.ConversorContrato.csvConComas(ConversorContrato.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.io.IOException: Failed to delete temp directory C:\Users\newal\AppData\Local\Temp\junit4319037781621970680. The following paths could not be deleted (see suppressed exceptions for details): <root>, p.csv, p.json
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		... 2 more
+		Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\newal\AppData\Local\Temp\junit4319037781621970680
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:270)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2816)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit4319037781621970680\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit4319037781621970680\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit4319037781621970680\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit4319037781621970680\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+
+ad.a4.OriginalTest.inexistente -- Time elapsed: 0.015 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.Exception to be thrown, but nothing was thrown.
+	at ad.a4.ConversorContrato.inexistente(ConversorContrato.java:70)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.io.IOException: Failed to delete temp directory C:\Users\newal\AppData\Local\Temp\junit14928049971532260944. The following paths could not be deleted (see suppressed exceptions for details): <root>, p.csv, p.json
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		... 2 more
+		Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\newal\AppData\Local\Temp\junit14928049971532260944
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:270)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2816)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit14928049971532260944\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit14928049971532260944\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit14928049971532260944\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit14928049971532260944\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+
+ad.a4.OriginalTest.pedidoSinCliente -- Time elapsed: 0.021 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.Exception to be thrown, but nothing was thrown.
+	at ad.a4.ConversorContrato.pedidoSinCliente(ConversorContrato.java:89)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.io.IOException: Failed to delete temp directory C:\Users\newal\AppData\Local\Temp\junit2439461219859721719. The following paths could not be deleted (see suppressed exceptions for details): <root>, p.csv, p.json
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		... 2 more
+		Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\newal\AppData\Local\Temp\junit2439461219859721719
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:270)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2816)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit2439461219859721719\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit2439461219859721719\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit2439461219859721719\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit2439461219859721719\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+
+ad.a4.OriginalTest.noPisaSalidaAnterior -- Time elapsed: 0.036 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: 
+expected: <pedido,fecha,cliente,producto,cantidad,precio
+P001,2026-09-01,Ana López,Filtro de aceite,2,12.5
+P001,2026-09-01,Ana López,Aceite 5W30 5L,1,38.9
+P002,2026-09-02,Luis Vázquez,Pastillas de freno,4,21.0
+P003,2026-09-03,Recambios Miño,Escobilla limpiaparabrisas,2,9.95
+P003,2026-09-03,Recambios Miño,Bombilla H7,6,4.2
+P003,2026-09-03,Recambios Miño,Líquido refrigerante,3,7.8
+> but was: <>
+	at ad.a4.ConversorContrato.noPisaSalidaAnterior(ConversorContrato.java:99)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.io.IOException: Failed to delete temp directory C:\Users\newal\AppData\Local\Temp\junit6231088383319944613. The following paths could not be deleted (see suppressed exceptions for details): <root>, p.csv, p.json
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		... 2 more
+		Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\newal\AppData\Local\Temp\junit6231088383319944613
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:270)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2816)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit6231088383319944613\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit6231088383319944613\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit6231088383319944613\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit6231088383319944613\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+
+ad.a4.OriginalTest.jsonValido -- Time elapsed: 0.235 s <<< ERROR!
+com.fasterxml.jackson.core.JsonParseException: 
+Unexpected character (']' (code 93)): expected a value
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 205]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2648)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._handleUnexpectedValue(UTF8StreamJsonParser.java:2717)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser._nextTokenNotInObject(UTF8StreamJsonParser.java:867)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextToken(UTF8StreamJsonParser.java:753)
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer._deserializeContainerNoRecursion(JsonNodeDeserializer.java:609)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:104)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:25)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4947)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3313)
+	at ad.a4.ConversorContrato.jsonValido(ConversorContrato.java:40)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+ad.a4.OriginalTest.malFormado -- Time elapsed: 0.023 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.Exception to be thrown, but nothing was thrown.
+	at ad.a4.ConversorContrato.malFormado(ConversorContrato.java:80)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	Suppressed: java.io.IOException: Failed to delete temp directory C:\Users\newal\AppData\Local\Temp\junit1435474420286371049. The following paths could not be deleted (see suppressed exceptions for details): <root>, p.csv, p.json
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
+		at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+		at java.base/java.util.stream.SortedOps$RefSortingSink.end(SortedOps.java:395)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.Sink$ChainedReference.end(Sink.java:261)
+		at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)
+		at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+		at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
+		at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
+		at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+		at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+		... 2 more
+		Suppressed: java.nio.file.DirectoryNotEmptyException: C:\Users\newal\AppData\Local\Temp\junit1435474420286371049
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:270)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2816)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit1435474420286371049\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit1435474420286371049\p.csv: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+		Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit1435474420286371049\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+			at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:92)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+			at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+			at java.base/sun.nio.fs.WindowsFileSystemProvider.implDelete(WindowsFileSystemProvider.java:273)
+			at java.base/sun.nio.fs.AbstractFileSystemProvider.delete(AbstractFileSystemProvider.java:105)
+			at java.base/java.nio.file.Files.delete(Files.java:1153)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2799)
+			at java.base/java.nio.file.Files.walkFileTree(Files.java:2870)
+			... 13 more
+			Suppressed: java.nio.file.FileSystemException: C:\Users\newal\AppData\Local\Temp\junit1435474420286371049\p.json: El proceso no tiene acceso al archivo porque está siendo utilizado por otro proceso
+				... 21 more
+
+ad.a4.OriginalTest.comillasEnJson -- Time elapsed: 0.016 s <<< ERROR!
+com.fasterxml.jackson.core.JsonParseException: 
+Unexpected character ('O' (code 79)): was expecting comma to separate Object entries
+ at [Source: REDACTED (`StreamReadFeature.INCLUDE_SOURCE_IN_LOCATION` disabled); line: 2, column: 63]
+	at com.fasterxml.jackson.core.JsonParser._constructReadException(JsonParser.java:2648)
+	at com.fasterxml.jackson.core.base.ParserMinimalBase._reportUnexpectedChar(ParserMinimalBase.java:685)
+	at com.fasterxml.jackson.core.json.UTF8StreamJsonParser.nextFieldName(UTF8StreamJsonParser.java:1021)
+	at com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer._deserializeContainerNoRecursion(JsonNodeDeserializer.java:539)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:104)
+	at com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer.deserialize(JsonNodeDeserializer.java:25)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:342)
+	at com.fasterxml.jackson.databind.ObjectMapper._readTreeAndClose(ObjectMapper.java:4947)
+	at com.fasterxml.jackson.databind.ObjectMapper.readTree(ObjectMapper.java:3313)
+	at ad.a4.ConversorContrato.comillasEnJson(ConversorContrato.java:61)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
